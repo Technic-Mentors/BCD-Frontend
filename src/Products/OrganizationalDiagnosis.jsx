@@ -1,4 +1,5 @@
 import React from "react";
+import CallActions from "./CallToActions";
 
 export default function OrganizationalDiagnosis() {
     return (
@@ -32,8 +33,8 @@ export default function OrganizationalDiagnosis() {
                 </ul>
 
                 <div>
-                    <h3 className="fables-second-text-color">Our Services:</h3>
-                    <table className="table">
+                    <h3 className="fables-second-text-color text-center">Our Services</h3>
+                    <table className="table table1">
                         <thead>
                             <tr>
                                 <th>Services</th>
@@ -43,35 +44,35 @@ export default function OrganizationalDiagnosis() {
                         <tbody>
                             <tr>
                                 <th scope="row">Employee Surveys</th>
-                                <td className="table-active">Surveys collect feedback from employees on various aspects such as job satisfaction, organizational culture, communication, and leadership, providing insights into the organizational climate</td>
+                                <td >Surveys collect feedback from employees on various aspects such as job satisfaction, organizational culture, communication, and leadership, providing insights into the organizational climate</td>
                             </tr>
                             <tr>
                                 <th scope="row">Organizational Cultural Assessment</th>
-                                <td className="table-active">Specific tools designed to assess and measure organizational culture, providing insights into cultural strengths and areas for improvement</td>
+                                <td >Specific tools designed to assess and measure organizational culture, providing insights into cultural strengths and areas for improvement</td>
                             </tr>
                             <tr>
                                 <th scope="row">Organizational Health Diagnostic</th>
-                                <td className="table-active">OHI assesses the overall health and effectiveness of an organization by evaluating key dimensions, including leadership, strategy, culture, and execution</td>
+                                <td >OHI assesses the overall health and effectiveness of an organization by evaluating key dimensions, including leadership, strategy, culture, and execution</td>
                             </tr>
                             <tr>
                                 <th scope="row">Customer Satisfaction Surveys</th>
-                                <td className="table-active">Understanding customer perspectives through surveys helps organizations identify areas for improvement in products, services, and customer interactions</td>
+                                <td >Understanding customer perspectives through surveys helps organizations identify areas for improvement in products, services, and customer interactions</td>
                             </tr>
                             <tr>
                                 <th scope="row">Team Dynamics Assessment</th>
-                                <td className="table-active">Assess leadership styles, team dynamics, and communication patterns to enhance collaboration and effectiveness</td>
+                                <td >Assess leadership styles, team dynamics, and communication patterns to enhance collaboration and effectiveness</td>
                             </tr>
                             <tr>
                                 <th scope="row">Change Readiness Assessments</th>
-                                <td className="table-active">These tools evaluate an organization's readiness for change by assessing factors such as employee attitudes, communication effectiveness, and leadership support</td>
+                                <td >These tools evaluate an organization's readiness for change by assessing factors such as employee attitudes, communication effectiveness, and leadership support</td>
                             </tr>
                             <tr>
                                 <th scope="row">Technology Adoption Assessments</th>
-                                <td className="table-active">Assess the organization's readiness and effectiveness in adopting and utilizing technology to support its operations and strategic objectives</td>
+                                <td >Assess the organization's readiness and effectiveness in adopting and utilizing technology to support its operations and strategic objectives</td>
                             </tr>
                             <tr>
                                 <th scope="row">Customized Diagnosis </th>
-                                <td className="table-active">Tailored solutions to address specific challenges and opportunities within your organization</td>
+                                <td >Tailored solutions to address specific challenges and opportunities within your organization</td>
                             </tr>
                         </tbody>
                     </table>
@@ -86,15 +87,8 @@ export default function OrganizationalDiagnosis() {
                 </ul>
 
                 <p><strong>Ready to Transform Your Organization?  </strong> Contact us today to schedule a consultation and take the first step towards unlocking your organization's full potential</p>
-                <div className="d-flex justify-content-center services-contact">
-                    <div className="s-mail">
-                        <h4>Email Us:</h4> <p>sales@bcdserve.com</p>
-                    </div>
-                    <div className="s-call">
-                        <h4>Call Us:</h4> <p>0300-0880323</p>
-                    </div>
-                </div>
             </div>
+            <CallActions/>  
         </div>
     )
 }

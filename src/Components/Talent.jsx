@@ -1,9 +1,9 @@
 import React from 'react'
-import Calltoaction from "./Calltoaction";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import "animate.css";
+import CallActions from '../Products/CallToActions';
 
 export default function Talent() {
   useEffect(() => {
@@ -155,8 +155,8 @@ export default function Talent() {
         </div>
       </div>
       {/* About End */}
-      <Calltoaction />
-      <div className="container">
+
+      <div className="container mb-4">
         <div className="row">
           <div className="col-md-3 py-3 d-flex align-items-stretch" style={{ backgroundColor: "white", borderRadius: "1rem" }} data-aos="fade-up"
             data-aos-duration="2000">
@@ -170,26 +170,26 @@ export default function Talent() {
               </div>
             </div>
           </div>
-        <div className="col-md-3 py-3 d-flex align-items-stretch" style={{ backgroundColor: "white", borderRadius: "1rem" }} data-aos="fade-up"
+          <div className="col-md-3 py-3 d-flex align-items-stretch" style={{ backgroundColor: "white", borderRadius: "1rem" }} data-aos="fade-up"
             data-aos-duration="2000">
             <div className="card card-bussiness">
               <div className="card-body">
 
                 <h5 className="card-title mt-3 font-weight-bold fables-second-text-color">Training & Development</h5>
                 <p className="card-text">
-                Our customized training programs help organizations to build skilled and capable workforce, foster continuous improvement, and stay competitive in dynamic business environments.
+                  Our customized training programs help organizations to build skilled and capable workforce, foster continuous improvement, and stay competitive in dynamic business environments.
                 </p>
               </div>
             </div>
           </div>
-        <div className="col-md-3 py-3 d-flex align-items-stretch" style={{ backgroundColor: "white", borderRadius: "1rem" }} data-aos="fade-up"
+          <div className="col-md-3 py-3 d-flex align-items-stretch" style={{ backgroundColor: "white", borderRadius: "1rem" }} data-aos="fade-up"
             data-aos-duration="2000">
             <div className="card card-bussiness">
               <div className="card-body">
 
                 <h5 className="card-title mt-3 font-weight-bold fables-second-text-color">Employee Relations</h5>
                 <p className="card-text">
-                Provide professional services to firms in managing and improving employers-employees relations, conflicts resolution, labour laws compliance, and the overall work environment.
+                  Provide professional services to firms in managing and improving employers-employees relations, conflicts resolution, labour laws compliance, and the overall work environment.
                 </p>
               </div>
             </div>
@@ -207,9 +207,9 @@ export default function Talent() {
               </div>
             </div>
           </div>
-          
         </div>
       </div>
+      <CallActions />
     </div>
   )
 }

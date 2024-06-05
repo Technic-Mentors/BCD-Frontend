@@ -16,7 +16,6 @@ import Topheader from './Components/Topheader';
 import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom"
 import ScrolToTop from './ScrolToTop';
 import Learningcafe from './Components/Learningcafe';
-import Signup from './Components/Signup';
 import Signin from './Components/Signin';
 import Addnews from './News & Event/Addnews';
 import Allnews from './News & Event/Allnews';
@@ -31,6 +30,7 @@ import SpecializedTraining from './Products/SpecializedTraining';
 import OrganizationalDiagnosis from './Products/OrganizationalDiagnosis';
 import BehaviouralDiagnosis from './Products/BehaviouralDiagnosis';
 import EmployeeManagement from './Products/EmployeeManagement';
+import DigitalProducts from './Products/DigitalProducts';
 function App() {
   return (
     <div>
@@ -58,7 +58,8 @@ function App() {
         <Route path='/specialized-training' element={<SpecializedTraining/>}/>        
         <Route path='/organizational-diagnosis' element={<OrganizationalDiagnosis/>}/>                
         <Route path='/behavioural-diagnosis' element={<BehaviouralDiagnosis/>}/>                
-        <Route path='/employee-management' element={<EmployeeManagement/>}/>                
+        <Route path='/employee-management' element={<EmployeeManagement/>}/> 
+        <Route path='/our-digital-products' element={<DigitalProducts/>}/>  
         {/* <Route path='/signup' element={<Signup/>}/> */}
         <Route path='/admin' element={<Signin/>}/>
         <Route path='/adminpanel' element={<Admin/>}>

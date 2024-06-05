@@ -52,7 +52,7 @@ export default function News() {
           {news &&
             news.map((news) => {
               return (
-                <div className="col-md-4 mt-4" key={news._id}>
+                <div className="col-md-4 my-4" key={news._id}>
                   <div className="card news-card">
                     <div className="card-body">
                       <h5 className="card-title">{news.title}</h5>
@@ -68,14 +68,14 @@ export default function News() {
                           {formatDate(news.date)}
                         </span>
                       </h6>
-                      <a
+                      <div
                         style={{ color: "#29B44A", cursor:"pointer" }}
                         data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop"
                         onClick={() => getNews(news._id)}
                       >
                         Details
-                      </a>
+                      </div>
                     </div>
                   </div>
                 </div>

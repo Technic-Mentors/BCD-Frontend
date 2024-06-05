@@ -1,4 +1,5 @@
 import React from "react";
+import CallActions from "./CallToActions";
 
 export default function Recruitment() {
     return (
@@ -30,12 +31,12 @@ export default function Recruitment() {
                     <li>Training and support to empower HR teams for effective implementation</li>
                 </ul>
                 <p>Here are the types of packages that are designed to suit your specific needs</p>
-                <h2 className="fables-second-text-color">Manual Development Packages</h2>
+                <h2 className="fables-second-text-color text-center">Manual Development Packages</h2>
                 <div className="color-overlay2">
                     <div className="container py-3">
                         <div className="row services-pakage g-4">
                             <div
-                                className="col-md-12"
+                                className="col-md-4"
                             >
                                 <div className="rounded bg-light pricing-item">
                                     <div
@@ -92,7 +93,7 @@ export default function Recruitment() {
                                 </div>
                             </div>
                             <div
-                                className="col-md-12"
+                                className="col-md-4"
                             >
                                 <div className="rounded bg-light pricing-item">
                                     <div
@@ -149,7 +150,7 @@ export default function Recruitment() {
                                 </div>
                             </div>
                             <div
-                                className="col-md-12"
+                                className="col-md-4"
                             >
                                 <div className="rounded bg-light pricing-item">
                                     <div
@@ -186,18 +187,8 @@ export default function Recruitment() {
                     </div>
                 </div>
                 <p> <strong>Experience the Difference: </strong> Unlock the full potential of your recruitment and selection processes with our packages. Contact us to discuss your needs and find the package or solution that's right for you.</p>
-                <div className="d-flex justify-content-center">
-                    <div>
-                        <h4>Email Us:</h4> <p>sales@bcdserve.com</p>
-                    </div>
-                    <div style={{marginLeft:"15px"}}>
-                        <h4>Call Us:</h4> <p>0300-0880323</p>
-                    </div>
-                </div>
-                <div className="d-flex justify-content-center">
-                    <p style={{ backgroundColor: "#29B44A", display: "inline-block", color: "white" }} className="p-2">Optimize Your Recruitment and Selection Processes with our services!</p>
-                </div>
             </div>
+                <CallActions/>
         </div>
     )
 }

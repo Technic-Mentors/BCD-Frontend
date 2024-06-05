@@ -75,7 +75,7 @@ export default function Learningcafe() {
         </p>
       </div>
       {/* About Start */}
-      <div className="container position-relative z-index">
+      <div className="container position-relative z-index mb-4">
         <div className="row d-flex justify-content-between">
           <div
             className="col-md-4 py-3 d-flex align-items-stretch"

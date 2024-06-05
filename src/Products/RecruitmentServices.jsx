@@ -1,4 +1,5 @@
 import React from "react";
+import CallActions from "./CallToActions";
 
 export default function RecruitmentServices() {
     return (
@@ -36,7 +37,7 @@ export default function RecruitmentServices() {
                     <div className="container py-3">
                         <div className="row services-pakage g-4">
                             <div
-                                className="col-md-12"
+                                className="col-md-4"
                             >
                                 <div className="rounded bg-light pricing-item">
                                     <div
@@ -92,7 +93,7 @@ export default function RecruitmentServices() {
                                                             Ideal for limited hiring needs
                                                         </p>
                                                     </div>
-                                                    <div style={{ backgroundColor: "#29B44A", display: "inline-block" }}>
+                                                    <div style={{ backgroundColor: "#29B44A", display: "inline-block" }} className="d-flex justify-content-center">
                                                         <h5 className="text-center p-2 text-white">One gross salary</h5>
                                                     </div>
                                                 </div>
@@ -102,7 +103,7 @@ export default function RecruitmentServices() {
                                 </div>
                             </div>
                             <div
-                                className="col-md-12"
+                                className="col-md-4"
                             >
                                 <div className="rounded bg-light pricing-item">
                                     <div
@@ -158,7 +159,7 @@ export default function RecruitmentServices() {
                                                             Suitable for moderate hiring demands
                                                         </p>
                                                     </div>
-                                                    <div style={{ backgroundColor: "#29B44A", display: "inline-block" }}>
+                                                    <div style={{ backgroundColor: "#29B44A", display: "inline-block" }} className="d-flex justify-content-center">
                                                         <h5 className="text-center p-2 text-white">75% of gross salary</h5>
                                                     </div>
                                                 </div>
@@ -168,7 +169,7 @@ export default function RecruitmentServices() {
                                 </div>
                             </div>
                             <div
-                                className="col-md-12"
+                                className="col-md-4"
                             >
                                 <div className="rounded bg-light pricing-item">
                                     <div
@@ -225,7 +226,7 @@ export default function RecruitmentServices() {
                                                             Suitable for customized & large recruitment needs
                                                         </p>
                                                     </div>
-                                                    <div style={{ backgroundColor: "#29B44A", display: "inline-block" }}>
+                                                    <div style={{ backgroundColor: "#29B44A", display: "inline-block" }} className="d-flex justify-content-center">
                                                         <h5 className="text-center p-2 text-white">50% of gross salary</h5>
                                                     </div>
                                                 </div>
@@ -242,17 +243,7 @@ export default function RecruitmentServices() {
                 <ul style={{ listStyle: "initial" }}>
                     <li> <strong>Experience the Difference: </strong> Unlock the full potential of your organization with our Recruitment Solutions. Contact us today to discuss your needs and find the package that's right for you.</li>
                 </ul>
-                <div className="d-flex justify-content-center">
-                    <div>
-                        <h4>Email Us:</h4> <p>sales@bcdserve.com</p>
-                    </div>
-                    <div style={{ marginLeft: "15px" }}>
-                        <h4>Call Us:</h4> <p>0300-0880323</p>
-                    </div>
-                </div>
-                <div className="d-flex justify-content-center">
-                    <p style={{ backgroundColor: "#29B44A", display: "inline-block", color: "white" }} className="p-2">Partner with us and take the hassle out of hiring</p>
-                </div>
+                <CallActions/>
             </div>
         </div>
     )

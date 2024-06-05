@@ -4,9 +4,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import "animate.css";
-import CapoBiz from "../img/CapoBiz-LOGO.avif";
-import Capobrain from "../img/Capobrain-LOGO.png";
-import TechnicMentors from "../img/technicblue.png"
+import CapoBiz from "../img/capobiz-logo.ico";
+import CapoBiz1 from "../img/capobiz-logo1.ico";
+import Capobrain from "../img/capobrain-logo.ico";
+import Capobrain1 from "../img/capobrain-logo1.ico";
 import Testimonial from "./Testimonials";
 import BcdLogo from "../img/BCDS Logo.png"
 import Homebar from "./Homebar";
@@ -24,24 +25,16 @@ export default function Home() {
     AOS.init();
   });
 
-  const [activeTab, setActiveTab] = useState('HR-solution');
-
-  const handleTabChange = (tabId) => {
-    setActiveTab(tabId);
-  }
-
   return (
     <div>
       {/* !-- Start Header --> */}
       <div className="fables-header">
         <div className="fables-after-overlay">
-          <div className="navbar-container">
-            <Homebar onNavbarToggle={handleNavbarToggle} />
-          </div>
-          <div className="logo-container">
+            <Homebar/>
+          {/* <div className="logo-container">
             <img style={{ width: "110px", height: "110px" }} src={BcdLogo} alt="" />
             <h5 className="text-white">BCD Services</h5>
-          </div>
+          </div> */}
           <video autoPlay loop muted playsInline className="header-video">
             <source src="assets\custom\Home-header-video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -50,7 +43,7 @@ export default function Home() {
           <div className="container-fluid px-5">
             <div className="row py-10">
               <div
-                className={`col-md-5 vertical-border col-${isNavbarExpand ? "11" : "6"}`}
+                className="col-md-5 vertical-border col-11"
 
                 data-aos="fade-up"
                 data-aos-duration="2000"
@@ -214,7 +207,7 @@ export default function Home() {
                     className="fables-forth-text-color home-card-p font-15 mb-4"
                     style={{ textAlign: "left" }}
                   >
-                    The businesses are facing hard time due to fierce competition and in this respect disruptive business models are imperative for sustainability of any business. Our professionals work with clients for business analysis, strategic rethinking, process transformation, process reengineering and change management.
+                    Our professionals work with clients for business analysis, strategic rethinking, process transformation, re-engineering process and change management.
                   </p>
                   <Link to="/bussiness-soloution"> <button className="btn btn-do">Learn More</button></Link>
                 </div>
@@ -231,7 +224,7 @@ export default function Home() {
                     className="fables-forth-text-color home-card-p font-15 mb-4"
                     style={{ textAlign: "left" }}
                   >
-                    This century come up with talent war for businesses that is defining new dynamics of the business. Keeping in view the catalyst role of Human Capital (HC) our company has designed value added services for managing this resource.
+                    Keeping in view the catalyst role of Human Capital (HC) our company has designed value added services for managing this resource.
                   </p>
                   <Link to="/talent-soloution"> <button className="btn btn-do">Learn More</button></Link>
                 </div>
@@ -248,7 +241,7 @@ export default function Home() {
                     className="fables-forth-text-color home-card-p mb-4 font-15"
                     style={{ textAlign: "left" }}
                   >
-                    Digital technologies are shaping and transforming today’s business. The industry is gradually deploying these technologies for ecommerce solution, process automation, real time reporting, market intelligence and customer experience improvement. Our company has broadly focused in all possible areas of digitization for organizations
+                    Our company has broadly focused in all possible areas of digitization for organizations.
                   </p>
                   <Link to="/digital-soloution"> <button className="btn btn-do">Learn More</button></Link>
                 </div>
@@ -265,7 +258,7 @@ export default function Home() {
                     className="fables-forth-text-color home-card-p font-15 mb-4"
                     style={{ textAlign: "left" }}
                   >
-                    People of learning organization always focus to enhance their capabilities for best results. Our company offers many standardized and customized leaning programs so to boost systems thinking, personal mastery and mental modelling and shared vision.
+                    Our company offers many standardized and customized leaning programs so to boost systems thinking, personal mastery and mental .
                   </p>
                   <Link to="/learning-cafe"> <button className="btn btn-do">Learn More</button></Link>
                 </div>
@@ -275,6 +268,212 @@ export default function Home() {
         </div>
       </div>
       {/* <!-- End page content --> */}
+
+ {/* Product & sloutions */}
+ <div className="container">
+        <h2 className="font-30 font-weight-bold fables-second-text-color mt-4 text-center">
+          Our Product & Solutions
+        </h2>
+        <div className="row mt-3 d-flex justify-content-between overflow-hidden">
+          <div
+            className="card pt-1 pb-3 h-card col-lg-3 home-card1 text-center mb-4 mb-lg-0 wow fadeInDown"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div className="card-body">
+              <i className="fa fa-sitemap fables-second-text-color home-card-i fa-3x"></i>
+              <h5>Organization Design</h5>
+              <p
+                className="fables-forth-text-color home-card-p font-15 mb-4"
+                style={{ textAlign: "left" }}
+              >
+                BCD Services provides design consultancy to optimize company's structure, roles, and processes to drive efficiency and performance.
+              </p>
+              <Link to="/organization-design"> <button className="btn btn-do">Learn More</button></Link>
+            </div>
+          </div>
+          <div
+            className="card pt-1 pb-3 col-lg-3 home-card1 text-center mb-4 mb-lg-0 wow fadeInDown"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div className="card-body">
+              <i className="fa fa-chart-line fables-second-text-color home-card-i fa-3x"></i>
+              <h5>HR Analysis & Policy</h5>
+              <p
+                className="fables-forth-text-color home-card-p font-15 mb-4"
+                style={{ textAlign: "left" }}
+              >
+                With our HR Analysis and Policy service, we build a solid foundation for HR functions aligning it with organization's goals and values.
+              </p>
+              <Link to="/HR-policy"> <button className="btn btn-do">Learn More</button></Link>
+            </div>
+          </div>
+          <div
+            className="card pt-1 pb-3 col-lg-3 home-card1 text-center mb-4 mb-lg-0 wow fadeInDown"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div className="card-body">
+              <i className="fa fa-briefcase fables-second-text-color home-card-i fa-3x"></i>
+              <h5>Recruitment & Selection</h5>
+              <p
+                className="fables-forth-text-color home-card-p mb-4 font-15"
+                style={{ textAlign: "left" }}
+              >
+                Our Recruitment & Selection documentation is developed to streamline your hiring process, attract top talent, and ensure compliance with legal requirements.
+              </p>
+              <Link to="/recruitment-&-selection"> <button className="btn btn-do">Learn More</button></Link>
+            </div>
+          </div>
+          <div
+            className="card pt-1 pb-3 col-lg-3 home-card1 text-center mb-4 mb-lg-0 wow fadeInDown"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div className="card-body">
+              <i className="fa fa-users fables-second-text-color home-card-i fa-3x"></i>
+              <h5>Recruitment Solution</h5>
+              <p
+                className="fables-forth-text-color home-card-p font-15 mb-4"
+                style={{ textAlign: "left" }}
+              >
+                We offer comprehensive recruitment services to help you find the best candidates for your organization.
+              </p>
+              <Link to="/recruitment-services"> <button className="btn btn-do">Learn More</button></Link>
+            </div>
+          </div>
+        </div>
+        <div className="row mt-3 d-flex justify-content-between overflow-hidden">
+          <div
+            className="card pt-1 pb-3 h-card col-lg-3 home-card1 text-center mb-4 mb-lg-0 wow fadeInDown"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div className="card-body">
+              <i className="fa fa-book fables-second-text-color home-card-i fa-3x"></i>
+              <h5>Training Solution</h5>
+              <p
+                className="fables-forth-text-color home-card-p font-15 mb-4"
+                style={{ textAlign: "left" }}
+              >
+                With our customized training solutions, you can empower your team with the knowledge and skills they need to succeed in today's dynamic business environment.
+              </p>
+              <Link to="/employees-training"> <button className="btn btn-do">Learn More</button></Link>
+            </div>
+          </div>
+          <div
+            className="card pt-1 pb-3 col-lg-3 home-card1 text-center mb-4 mb-lg-0 wow fadeInDown"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div className="card-body">
+              <i className="fa fa-file-alt fables-second-text-color home-card-i fa-3x"></i>
+              <h5>Specialized Training Manuals</h5>
+              <p
+                className="fables-forth-text-color home-card-p font-15 mb-4"
+                style={{ textAlign: "left" }}
+              >
+                We are specialized in developing customized training manuals designed to meet the specific needs and objectives of your organization.
+              </p>
+              <Link to="/specialized-training"> <button className="btn btn-do">Learn More</button></Link>
+            </div>
+          </div>
+          <div
+            className="card pt-1 pb-3 col-lg-3 home-card1 text-center mb-4 mb-lg-0 wow fadeInDown"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div className="card-body">
+              <i className="fa fa-clipboard-check fables-second-text-color home-card-i fa-3x"></i>
+              <h5>Organizational Diagnosis</h5>
+              <p
+                className="fables-forth-text-color home-card-p mb-4 font-15"
+                style={{ textAlign: "left" }}
+              >
+                Our organizational diagnostics solutions provide insights into the overall health of the organization by analysing processes of organization.
+              </p>
+              <Link to="/organizational-diagnosis"> <button className="btn btn-do">Learn More</button></Link>
+            </div>
+          </div>
+          <div
+            className="card pt-1 pb-3 col-lg-3 home-card1 text-center mb-4 mb-lg-0 wow fadeInDown"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div className="card-body">
+              <i className="fa fa-handshake fables-second-text-color home-card-i fa-3x"></i>
+              <h5>Employee Engagement</h5>
+              <p
+                className="fables-forth-text-color home-card-p font-15 mb-4"
+                style={{ textAlign: "left" }}
+              >
+                Employee Engagement Surveys are designed to measure and assess how motivated and engaged your employees are to perform their best at work.
+              </p>
+              <Link to="/employee-management"> <button className="btn btn-do">Learn More</button></Link>
+            </div>
+          </div>
+        </div>
+        <div className="row mt-3 d-flex overflow-hidden">
+          <div
+            className="card pt-1 pb-3 h-card col-lg-3 home-card1 text-center mb-4 mb-lg-0 wow fadeInDown"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div className="card-body">
+              <img
+                src={Capobrain}
+                alt="capobrain-education-management-system"
+                className="img-fluid capo"
+                style={{ height: "40px" }}
+              />
+              <img
+                src={Capobrain1}
+                alt="capobrain-education-management-system"
+                className="img-fluid capo1"
+                style={{ height: "40px" }}
+              />
+              <h5>School/College Management System</h5>
+              <p
+                className="fables-forth-text-color home-card-p font-15 mb-4"
+                style={{ textAlign: "left" }}
+              >
+                CapoBrain is a versatile Educational Institute Management System that simplifies administrative tasks and facilitates communication between educators, staff, and parents in educational institutions.
+              </p>
+              <a href="https://capobrain.com/" target="blank"> <button className="btn btn-do">Learn More</button></a>
+            </div>
+          </div>
+          <div
+            className="card capobiz-card pt-1 pb-3 col-lg-3 home-card1 text-center mb-4 mb-lg-0 wow fadeInDown"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div className="card-body">
+              <img
+                src={CapoBiz}
+                alt="capobiz-pos-software"
+                className="img-fluid capo"
+                style={{ height: "40px" }}
+              />
+              <img
+                src={CapoBiz1}
+                alt="capobiz-pos-software"
+                className="img-fluid capo1"
+                style={{ height: "40px" }}
+              />
+              <h5>Point Of Sale Software</h5>
+              <p
+                className="fables-forth-text-color home-card-p font-15 mb-4"
+                style={{ textAlign: "left" }}
+              >
+                Step into a new era of business management with our cutting-edge Point of Sale (POS) system. We're not just redefining transactions; we're revolutionizing the way you run your business.
+              </p>
+              <a href="https://capobiz.com/" target="blank"> <button className="btn btn-do">Learn More</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Product & sloutions end */}
 
       {/* Start solutions */}
       <div className="container pb-3">
@@ -342,210 +541,6 @@ export default function Home() {
         </div>
       </div>
       {/* End solutions */}
-
-      {/* Product & sloutions */}
-      <div className="container">
-        <div className="row">
-          <h2 className="font-30 font-weight-bold fables-second-text-color mt-4 text-center">
-            Our Product & Solutions
-          </h2>
-
-          <section className="pills-tab-section mt-4">
-            <div className="container pb-2">
-              <div className="row">
-                <div className="col-md-12 jutify-content-center align-items-center" >
-                  {/* Tab navs */}
-                  <div
-                    className="nav nav-pills text-start"
-                    id="v-pills-tab"
-                    role="tablist"
-                    aria-orientation="vertical"
-                  >
-                    <a
-                      className={`nav-link py-2 mb-2 ${activeTab === 'HR-solution' ? 'active' : ''}`}
-                      id="HR-solution-tab"
-                      data-mdb-toggle="pill"
-                      href="#HR-solution"
-                      role="tab"
-                      onClick={() => handleTabChange('HR-solution')}
-                      aria-controls="HR-solution"
-                      aria-selected={activeTab === 'HR-solution'}
-                      style={{ fontWeight: "bold", backgroundColor: activeTab === 'HR-solution' ? '#29B44A' : 'White' }}
-                    ><span className="mt-3 text-dark">HR Solution</span></a
-                    >
-                    <a
-                      className={`nav-link tab-space py-2 text-dark mb-2 ${activeTab === 'corporate-trainings' ? 'active' : ''}`}
-                      id="corporate-trainings-tab"
-                      data-mdb-toggle="pill"
-                      href="#corporate-trainings"
-                      role="tab"
-                      onClick={() => handleTabChange('corporate-trainings')}
-                      aria-controls="corporate-trainings"
-                      aria-selected={activeTab === 'corporate-trainings'}
-                      style={{ fontWeight: "bold", backgroundColor: activeTab === 'corporate-trainings' ? '#29B44A' : 'White' }}
-                    >Corporate Trainings</a
-                    >
-                    <a
-                      className={`nav-link tab-space py-2 text-dark mb-2 ${activeTab === 'diagnosis' ? 'active' : ''}`}
-                      id="diagnosis-tab"
-                      data-mdb-toggle="pill"
-                      href="#diagnosis"
-                      role="tab"
-                      onClick={() => handleTabChange('diagnosis')}
-                      aria-controls="diagnosis"
-                      aria-selected={activeTab === 'diagnosis'}
-                      style={{ fontWeight: "bold", backgroundColor: activeTab === 'diagnosis' ? '#29B44A' : 'White' }}
-                    > Diagnosis</a>
-                    <a
-                      className={`nav-link tab-space py-2 text-dark mb-2 ${activeTab === 'digital-solution' ? 'active' : ''}`}
-                      id="digital-solution-tab"
-                      data-mdb-toggle="pill"
-                      href="#digital-solution"
-                      role="tab"
-                      onClick={() => handleTabChange('digital-solution')}
-                      aria-controls="diagnosis"
-                      aria-selected={activeTab === 'digital-solution'}
-                      style={{ fontWeight: "bold", backgroundColor: activeTab === 'digital-solution' ? '#29B44A' : 'White' }}
-                    >Digital Solution</a
-                    >
-                  </div>
-                </div>
-
-                <div className="col-md-12 tab-detail" >
-                  {/* Tab content */}
-                  <div className="tab-content" id="v-pills-tabContent">
-                    <div
-                      className={`tab-pane fade show ${activeTab === 'HR-solution' ? 'active' : ''}`}
-                      id="HR-solution"
-                      role="tabpanel"
-                      aria-labelledby="HR-solution-tab"
-                    >
-                      <ul className="list-group list-group-flush">
-                        <div className="row mt-4">
-                          <div className="col-md-6">
-                            <li> <h5>Organization Design</h5> <p>BCD Services provides design consultancy to optimize company's structure, roles, and processes to drive efficiency and performance.</p> <Link to="/organization-design">Learn More</Link></li>
-                            <li><h5>Recruitment & Selection</h5> <p>Our Recruitment & Selection documentation is developed to streamline your hiring process, attract top talent, and ensure compliance with legal requirements.</p> <Link to="/recruitment-&-selection">Learn More</Link></li>
-                          </div>
-                          <div className="col-md-6">
-                            <li><h5>HR Analysis & Policy</h5> <p>With our HR Analysis and Policy service, we build a solid foundation for HR functions aligning it with organization's goals and values.</p> <Link to="/HR-policy">Learn More</Link></li>
-                            <li><h5>Recruitment Solution</h5> <p>We offer comprehensive recruitment services to help you find the best candidates for your organization.</p> <Link to="/recruitment-services">Learn More</Link></li>
-                          </div>
-                        </div>
-                      </ul>
-                    </div>
-                    <div
-                      className={`tab-pane fade show ${activeTab === 'corporate-trainings' ? 'active' : ''}`}
-                      id="corporate-trainings"
-                      role="tabpanel"
-                      aria-labelledby="corporate-trainings-tab"
-                    >
-                      <ul className="list-group list-group-flush">
-                        <div className="row mt-4">
-                          <div className="col-md-6">
-                            <li> <h5>Training Solution</h5> <p>With our customized training solutions, you can empower your team with the knowledge and skills they need to succeed in today's dynamic business environment.</p> <Link to="/employees-training">Learn More</Link></li>
-                          </div>
-                          <div className="col-md-6">
-                            <li><h5>Specialized Training Manuals</h5> <p>We are specialized in developing customized training manuals designed to meet the specific needs and objectives of your organization</p> <Link to="/specialized-training">Learn More</Link></li>
-                          </div>
-                        </div>
-                      </ul>
-                    </div>
-                    <div
-                      className={`tab-pane fade show ${activeTab === 'diagnosis' ? 'active' : ''}`}
-                      id="diagnosis"
-                      role="tabpanel"
-                      aria-labelledby="diagnosis-tab"
-                    >
-                      <ul className="list-group list-group-flush">
-                        <div className="row mt-4">
-                          <div className="col-md-6">
-                            <li> <h5>Organizational Diagnosis</h5> <p>Our organizational diagnostics solutions provide insights into the overall health of the organization by analysing processes of organization.</p> <Link to="/organizational-diagnosis">Learn More</Link></li>
-                            <li> <h5>Employee Engagement</h5> <p>Employee Engagement Surveys are designed to measure and assess how motivated and engaged your employees are to perform their best at work. </p> <Link to="/employee-management">Learn More</Link></li>
-                          </div>
-                          <div className="col-md-6">
-                            <li><h5>Behavioural Diagnosis</h5> <p>Our diagnosis services offer a deep dive into the behavioural dynamics within your organization to enhance performance, culture, and effectiveness.</p> <Link to="/behavioural-diagnosis">Learn More</Link></li>
-                          </div>
-                        </div>
-                      </ul>
-                    </div>
-
-                    <div
-                      className={`tab-pane fade show ${activeTab === 'digital-solution' ? 'active' : ''}`}
-                      id="digital-solution"
-                      role="tabpanel"
-                      aria-labelledby="digital-solution"
-                    >
-                      <ul className="list-group list-group-flush">
-                        <div className="row">
-                          <div className="col-md-6 capobrain-product mt-4">
-                            <img
-                              src={Capobrain}
-                              alt="capobrain-education-management-system"
-                              className="img-fluid"
-                              style={{ height: "50px" }}
-                            />
-                            <h3 className="font-25 font-weight-bold mb-3 mt-4">
-                              Capobrain Education Management System
-                            </h3>
-                            <p style={{ color: "initial" }}>CapoBrain is a versatile Education Management System that simplifies administrative tasks and facilitates communication between educators, staff, and parents in educational institutions. Its intuitive interface and robust capabilities make managing student information,scheduling classes, and tracking attendance straightforward.</p>
-                            <div className="site-cta mt-4">
-                              <h5 className="fw-bold" style={{ color: "initial" }}>Want to have a demo? <a href="https://capobrain.com/" target='blank'>Visit Site</a></h5>
-                            </div>
-                            <img
-                              src={TechnicMentors}
-                              alt="capobrain-education-management-system"
-                              className="img-fluid mt-4"
-                              style={{ height: "50px" }}
-                            />
-                            <h3 className="font-25 font-weight-bold mb-3 mt-3">
-                              Technic Mentors Software Solutions
-                            </h3>
-                            <p style={{ color: "initial" }}>Technic mentors is the best IT consulting company to look at when searching for extraordinary software and technology solutions. We provide value-added and quality products and services. Our team is specialized and experienced and provides our clients with the finest experience ever.</p>
-                            <div className="site-cta mt-4">
-                              <h5 className="fw-bold" style={{ color: "initial" }}>Want to have a demo? <a href="https://technicmentors.com/" target='blank'>Visit Site</a></h5>
-                            </div>
-                          </div>
-                          <div className="col-md-6 capobiz-product mt-4">
-                            <img
-                              src={CapoBiz}
-                              alt="capobiz-pos-software"
-                              className="img-fluid"
-                              style={{ height: "50px" }}
-                            />
-                            <h3 className="font-25 font-weight-bold mb-3 mt-4">
-                              CapoBiz Point Of Sale Software
-                            </h3>
-
-                            <p style={{ color: "initial" }}>Step into a new era of business management with our cutting-edge Point of Sale (POS) system. We're not just redefining transactions; we're revolutionizing the way you run your business. Say goodbye to complexity, and welcome streamlined operations and unmatched efficiency. Explore the future of POS solutions with us, where innovation meets seamless functionality, and success becomes your everyday companion.</p>
-                            <h5>CapoBiz serves as:</h5>
-                            <div className="pos-list d-flex">
-                              <ul className="pos-system" style={{ listStyle: 'initial', lineHeight: '2', color: "initial" }}>
-                                <li>Point Of Sale System</li>
-                                <li>Restaurant Management System</li>
-                                <li>Trading Management System</li>
-                                <li>Real Estate Management System</li>
-                                <li>Pharmacy Management System</li>
-                                <li>Accounting Software</li>
-                                <li>Manufacturing Management System</li>
-                                <li>Custom Business Solutions</li>
-                              </ul>
-                            </div>
-                            <div className="site-cta mt-4 mb-4">
-                              <h5 className="fw-bold" style={{ color: "initial" }}>Want to have a demo? <a href="https://capobiz.com/" target='blank'>Visit Site</a></h5>
-                            </div>
-                          </div>
-                        </div>
-                      </ul>
-                    </div>
-                  </div>
-                  {/* Tab content */}
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div >
-      {/* Product & sloutions end */}
 
       {/* Chose Start */}
       <div className="fables-price-bg mt-3 overflow-hidden">

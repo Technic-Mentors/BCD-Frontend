@@ -1,4 +1,5 @@
 import React from "react";
+import CallActions from "./CallToActions";
 
 export default function HRPolicy() {
     return (
@@ -34,13 +35,12 @@ export default function HRPolicy() {
                     <li><strong>Training and Workshops:</strong> Equip your HR team and managers with the knowledge and skills they need to implement and enforce HR policies</li>
                 </ul>
                 <p>At <strong> BCD Services</strong>, we understand that having clear, comprehensive HR policies is essential for fostering a positive workplace culture and ensuring legal compliance. That's why we offer a range of customizable HR policy development packages that are offered to meet the unique needs of your organization. Here are the details of our packages:</p>
-                <h2 className="fables-second-text-color">HR Policy Framework Packages</h2>
+                <h2 className="fables-second-text-color text-center">HR Policy Framework Packages</h2>
                 <div className="color-overlay2">
                     <div className="container py-3">
                         <div className="row services-pakage g-4">
                             <div
-                                className="col-md-12"
-                               
+                                className="col-md-4"
                             >
                                 <div className="rounded bg-light pricing-item">
                                     <div
@@ -109,8 +109,7 @@ export default function HRPolicy() {
                                 </div>
                             </div>
                             <div
-                                className="col-md-12"
-                               
+                                className="col-md-4"
                             >
                                 <div className="rounded bg-light pricing-item">
                                     <div
@@ -191,8 +190,7 @@ export default function HRPolicy() {
                                 </div>
                             </div>
                             <div
-                                className="col-md-12"
-                               
+                                className="col-md-4"
                             >
                                 <div className="rounded bg-light pricing-item">
                                     <div
@@ -292,18 +290,12 @@ export default function HRPolicy() {
                     <li><strong>Support:</strong> Access ongoing assistance and guidance throughout the documentation process</li>
                 </ul>
                 <p><strong>Experience the Difference: </strong> Unlock the full potential of your HR function with our customizable HR Policy Packages. Contact us to discuss your needs and find the package that's right for you</p>
-                <div className="d-flex justify-content-center">
-                    <div>
-                        <h4>Email Us:</h4> <p>sales@bcdserve.com</p>
-                    </div>
-                    <div style={{ marginLeft: "15px" }}>
-                        <h4>Call Us:</h4> <p>0300-0880323</p>
-                    </div>
-                </div>
-                <div className="d-flex justify-content-center">
+                
+                {/* <div className="d-flex justify-content-center">
                     <p style={{ backgroundColor: "#29B44A", display: "inline-block", color: "white" }} className="p-2">Establish Clear and Comprehensive HR Policies with Tailored Solutions!</p>
-                </div>
+                </div> */}
             </div>
+            <CallActions/>
         </div>
     )
 }

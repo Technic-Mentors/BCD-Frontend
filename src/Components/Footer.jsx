@@ -16,7 +16,7 @@ if(path === location.pathname){
   return (
     <div>
       {/* <!-- Start Footer 2 Background Image  --> */}
-<div className="fables-footer-image white-color bg-rules mt-5">
+<div className="fables-footer-image white-color bg-rules">
   <div className='fables-after-overly'>
     <div className="container">
         <div className="row pt-5">
@@ -29,10 +29,6 @@ if(path === location.pathname){
              
             <div className="col-12 col-sm-6 col-lg-4">
                 <h2 className="font-20 semi-font fables-second-border-color border-bottom pb-3">Contact Us</h2>
-               {/* <div className="my-3">
-                    <h4 className="font-16 semi-font"><span className="fables-iconmap-icon fables-second-text-color pr-2 font-20 mt-1 d-inline-block"></span> Address Information</h4>
-                    <p className="font-14 fables-fifth-text-color mt-2 ml-4">158, Block D, NESPAK Housing Society, Canal Bank, Lahore</p>
-                </div> */}
                 <div className="my-3">
                     <h4 className="font-16 semi-font"><span className="fables-iconphone fables-second-text-color pr-2 font-20 mt-1 d-inline-block"></span> Call Now </h4>
                     <p className="font-14 fables-fifth-text-color mt-2 ml-4">+92 3000 880 323</p>
@@ -47,9 +43,8 @@ if(path === location.pathname){
                 <ul className="nav fables-footer-links">
                     <li><Link className="footer-link" to="/" onClick={()=> pageTop('/')}>Home</Link></li>
                     <li><Link className="footer-link" to="/about" onClick={()=> pageTop('/about')}>About</Link></li>
-                    <li><Link className="footer-link" to="/bussiness-soloution" onClick={()=> pageTop('/bussiness-soloution')}>Bussiness Soloution</Link></li>
-                    <li><Link className="footer-link" to="/talent-soloution" onClick={()=> pageTop('/talent-soloution')}>Talent Soloution</Link></li>
-                    <li><Link className="footer-link" to="/digital-soloution" onClick={()=> pageTop('/digital-soloution')}>Digital Soloution</Link></li>
+                    <li><Link className="footer-link" to="/learning-cafe" onClick={()=> pageTop('/learning-cafe')}>Learning Cafe</Link></li>
+                    <li><Link className="footer-link" to="/news-&-events" onClick={()=> pageTop('/news-&-events')}>News & Events</Link></li>
                     <li><Link className="footer-link" to="/csr-policy" onClick={()=> pageTop('/csr-policy')}>CSR</Link></li>
                     <li><Link className="footer-link" to="/contact" onClick={()=> pageTop('/contact')}>Contact</Link></li>
                     <li><Link className="footer-link mb-3" to="/join" onClick={()=> pageTop('/join')}>Join</Link></li>

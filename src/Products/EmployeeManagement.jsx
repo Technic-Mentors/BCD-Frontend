@@ -1,4 +1,5 @@
 import React from "react";
+import CallActions from "./CallToActions";
 
 export default function EmployeeManagement() {
     return (
@@ -29,13 +30,13 @@ export default function EmployeeManagement() {
                     <li><strong>Boost Team Morale:</strong> Foster a positive work environment by understanding what motivates and engages your employees. Happy employees contribute to a thriving workplace</li>
                     <li><strong>Drive Organizational Success: </strong> Engaged employees are more productive and committed. Harness the power of engagement to drive overall organizational success</li>
                 </ul>
-                <h3 className="fables-second-text-color">Our Packages:</h3>
+                <h3 className="fables-second-text-color text-center">Our Packages</h3>
                 <p>Every organization has a different need that’s why we offer a range of survey packages that are designed to suit your specific requirements. Here are the types of packages we offer:</p>
                 <div className="color-overlay2">
                     <div className="container py-3">
                         <div className="row services-pakage g-4">
                             <div
-                                className="col-md-12" 
+                                className="col-md-4"
                             >
                                 <div className="rounded bg-light pricing-item">
                                     <div
@@ -86,7 +87,7 @@ export default function EmployeeManagement() {
                                 </div>
                             </div>
                             <div
-                                className="col-md-12"
+                                className="col-md-4"
                             >
                                 <div className="rounded bg-light pricing-item">
                                     <div
@@ -137,7 +138,7 @@ export default function EmployeeManagement() {
                                 </div>
                             </div>
                             <div
-                                className="col-md-12"
+                                className="col-md-4"
                             >
                                 <div className="rounded bg-light pricing-item">
                                     <div
@@ -181,22 +182,11 @@ export default function EmployeeManagement() {
                     <li><strong>Confidential and Secure:</strong> Trust is paramount. Rest assured, your survey responses are confidential, and our platform ensures the security of your data</li>
                 </ul>
                 <h3 className="fables-second-text-color">How to Get Started:</h3>
-                <p> <strong>1. Contact Us:</strong> <br/> Reach out to express interest and schedule your employee engagement survey</p>
-                <p> <strong>2. Survey Administration:</strong> <br/> We'll handle the logistics and administration of the survey, making the process seamless for your organization</p>
-                <p> <strong>3. Receive Insights:</strong> <br/> Gain access to valuable insights and recommendations based on the survey results</p>
-                <div className="d-flex justify-content-center">
-                    <strong>Are You Ready to Transform Your Workplace? Act Now!</strong>
-                </div>
-                <div className="d-flex justify-content-center services-contact py-2">
-                    <div className="s-mail">
-                        <h4>Email Us:</h4> <p>sales@bcdserve.com</p>
-                    </div>
-                    <div className="s-call">
-                        <h4>Call Us:</h4> <p>0300-0880323</p>
-                    </div>
-                </div>
-                <p className="text-center">Take the first step toward a more engaged and successful workplace. Harness the<br/> power of our Employee Engagement Survey and watch your organization thrive.</p>
+                <p> <strong>1. Contact Us:</strong> <br /> Reach out to express interest and schedule your employee engagement survey</p>
+                <p> <strong>2. Survey Administration:</strong> <br /> We'll handle the logistics and administration of the survey, making the process seamless for your organization</p>
+                <p> <strong>3. Receive Insights:</strong> <br /> Gain access to valuable insights and recommendations based on the survey results</p>
             </div>
+            <CallActions />
         </div>
     )
 }

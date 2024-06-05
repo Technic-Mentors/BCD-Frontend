@@ -55,7 +55,7 @@ export default function Team() {
             </a>
           </div>
           <div className="card-body">
-            <h5 style={{padding:"10px"}}>
+            <h5 style={{ padding: "10px" }}>
               <a
                 href="#/"
                 className="font-20 semi-font fables-forth-text-color fables-second-hover-color team-name"
@@ -76,7 +76,7 @@ export default function Team() {
             </a>
           </div>
           <div className="card-body">
-            <h5 style={{padding:"10px"}}>
+            <h5 style={{ padding: "10px" }}>
               <a
                 href="#/"
                 className="font-20 semi-font fables-forth-text-color fables-second-hover-color team-name"
@@ -97,7 +97,7 @@ export default function Team() {
             </a>
           </div>
           <div className="card-body">
-            <h5 style={{padding:"10px"}}>
+            <h5 style={{ padding: "10px" }}>
               <a
                 href="#/"
                 className="font-20 semi-font fables-forth-text-color fables-second-hover-color team-name"
@@ -118,7 +118,7 @@ export default function Team() {
             </a>
           </div>
           <div className="card-body">
-            <h5 style={{padding:"10px"}}>
+            <h5 style={{ padding: "10px" }}>
               <a
                 href="#/"
                 className="font-20 semi-font fables-forth-text-color fables-second-hover-color team-name"
@@ -139,7 +139,7 @@ export default function Team() {
             </a>
           </div>
           <div className="card-body">
-            <h5 style={{padding:"10px"}}>
+            <h5 style={{ padding: "10px" }}>
               <a
                 href="#/"
                 className="font-20 semi-font fables-forth-text-color fables-second-hover-color team-name"
@@ -160,7 +160,7 @@ export default function Team() {
             </a>
           </div>
           <div className="card-body">
-            <h5 style={{padding:"10px"}}>
+            <h5 style={{ padding: "10px" }}>
               <a
                 href="#/"
                 className="font-20 semi-font fables-forth-text-color fables-second-hover-color team-name"
@@ -181,7 +181,7 @@ export default function Team() {
             </a>
           </div>
           <div className="card-body">
-            <h5 style={{padding:"10px"}}>
+            <h5 style={{ padding: "10px" }}>
               <a
                 href="#/"
                 className="font-20 semi-font fables-forth-text-color fables-second-hover-color team-name"
@@ -202,7 +202,7 @@ export default function Team() {
             </a>
           </div>
           <div className="card-body">
-            <h5 style={{padding:"10px"}}>
+            <h5 style={{ padding: "10px" }}>
               <a
                 href="#/"
                 className="font-20 semi-font fables-forth-text-color fables-second-hover-color team-name"

@@ -1,4 +1,5 @@
 import React from "react";
+import CallActions from "./CallToActions";
 
 export default function BehaviouralDiagnosis() {
     return (
@@ -31,8 +32,8 @@ export default function BehaviouralDiagnosis() {
                 </ul>
 
                 <div>
-                    <h3 className="fables-second-text-color">Our Services:</h3>
-                    <table className="table">
+                    <h3 className="fables-second-text-color text-center">Our Services</h3>
+                    <table className="table table1">
                         <thead>
                             <tr>
                                 <th>Services</th>
@@ -42,27 +43,27 @@ export default function BehaviouralDiagnosis() {
                         <tbody>
                             <tr>
                                 <th scope="row">Behaviour Assessment</th>
-                                <td className="table-active">Gain insights into personality traits, communication styles, and preferences to optimize personal effectiveness</td>
+                                <td >Gain insights into personality traits, communication styles, and preferences to optimize personal effectiveness</td>
                             </tr>
                             <tr>
                                 <th scope="row">Team Dynamics Analysis</th>
-                                <td className="table-active">Assess team dynamics, strengths, and areas for improvement to enhance collaboration and productivity</td>
+                                <td >Assess team dynamics, strengths, and areas for improvement to enhance collaboration and productivity</td>
                             </tr>
                             <tr>
                                 <th scope="row">Leadership Behaviour Evaluation</th>
-                                <td className="table-active">Analyse leadership styles, strengths, and potential areas for development to foster effective leadership</td>
+                                <td >Analyse leadership styles, strengths, and potential areas for development to foster effective leadership</td>
                             </tr>
                             <tr>
                                 <th scope="row">Conflict Resolution Strategies</th>
-                                <td className="table-active">Develop strategies to address and resolve conflicts within teams and organizations, promoting a positive work environment</td>
+                                <td >Develop strategies to address and resolve conflicts within teams and organizations, promoting a positive work environment</td>
                             </tr>
                             <tr>
                                 <th scope="row">Culture Assessment</th>
-                                <td className="table-active">Evaluate organizational culture and align behaviours with organizational values and objectives for greater alignment and success</td>
+                                <td >Evaluate organizational culture and align behaviours with organizational values and objectives for greater alignment and success</td>
                             </tr>
                             <tr>
                                 <th scope="row">Customized Assessment</th>
-                                <td className="table-active">Tailored solutions to address specific behavioural challenges and opportunities within your organization</td>
+                                <td >Tailored solutions to address specific behavioural challenges and opportunities within your organization</td>
                             </tr>
                         </tbody>
                     </table>
@@ -77,15 +78,9 @@ export default function BehaviouralDiagnosis() {
                 </ul>
 
                 <p><strong>Ready to Understand Behaviour and Drive Growth? </strong> Contact us today to schedule a consultation and take the first step towards unlocking insights for personal and organizational growth</p>
-                <div className="d-flex justify-content-center services-contact">
-                    <div className="s-mail">
-                        <h4>Email Us:</h4> <p>sales@bcdserve.com</p>
-                    </div>
-                    <div className="s-call">
-                        <h4>Call Us:</h4> <p>0300-0880323</p>
-                    </div>
-                </div>
+               
             </div>
+            <CallActions/>
         </div>
     )
 }

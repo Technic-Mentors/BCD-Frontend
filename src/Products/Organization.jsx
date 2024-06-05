@@ -1,4 +1,5 @@
 import React from "react";
+import CallActions from "./CallToActions";
 
 export default function Organization() {
     return (
@@ -33,7 +34,7 @@ export default function Organization() {
                     <div className="container py-5">
                         <div className="row g-4 services-pakage">
                             <div
-                                className="col-md-12 d-flex flex-column"
+                                className="col-md-4 "
                             >
                                 <div className="rounded bg-light pricing-item">
                                     <div
@@ -43,9 +44,8 @@ export default function Organization() {
                                         <h5 className="m-0 text-white">Basic Package</h5>
                                     </div>
                                     <div className="p-4 text-center fs-5">
-                                        <div className="row text-start">
+                                        <div className="row text-start" >
                                             <div className="col-12">
-
                                                 <div>
                                                     <div className="d-flex">
                                                         <i className="fa fa-check text-success me-2"></i>
@@ -96,7 +96,7 @@ export default function Organization() {
                                 </div>
                             </div>
                             <div
-                                className="col-md-12 d-flex flex-column"
+                                className="col-md-4 "
                             >
                                 <div className="rounded bg-light pricing-item">
                                     <div
@@ -106,7 +106,7 @@ export default function Organization() {
                                         <h5 className="m-0 text-white">Standard Package</h5>
                                     </div>
                                     <div className="p-4 text-center fs-5">
-                                        <div className="row text-start">
+                                        <div className="row text-start" >
                                             <div className="col-12">
 
                                                 <div>
@@ -159,7 +159,7 @@ export default function Organization() {
                                 </div>
                             </div>
                             <div
-                                className="col-md-12 d-flex flex-column"
+                                className="col-md-4 "
                             >
                                 <div className="rounded bg-light pricing-item">
                                     <div
@@ -170,7 +170,7 @@ export default function Organization() {
                                     </div>
                                     <div className="p-4 text-center fs-5">
 
-                                        <div className="row text-start">
+                                        <div className="row text-start" >
                                             <div className="col-12">
 
                                                 <div>
@@ -196,18 +196,11 @@ export default function Organization() {
                     </div>
                 </div>
                 <p> <strong>Experience the Difference: </strong> Unlock the full potential of your recruitment and selection processes with our packages. Contact us to discuss your needs and find the package or solution that's right for you.</p>
-                <div className="d-flex justify-content-center">
-                    <div>
-                        <h4>Email Us:</h4> <p>sales@bcdserve.com</p>
-                    </div>
-                    <div style={{ marginLeft: "15px" }}>
-                        <h4>Call Us:</h4> <p>0300-0880323</p>
-                    </div>
-                </div>
-                <div className="d-flex justify-content-center">
+                {/* <div className="d-flex justify-content-center">
                     <p style={{ backgroundColor: "#29B44A", display: "inline-block", color: "white" }} className="p-2">Enhance Structure and Clarity with Tailored Solutions!</p>
-                </div>
+                </div> */}
             </div>
+                <CallActions/>
         </div>
     )
 }

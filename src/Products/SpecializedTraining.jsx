@@ -1,4 +1,5 @@
 import React from "react";
+import CallActions from "./CallToActions";
 
 export default function SpecializedTraining() {
     return (
@@ -32,19 +33,9 @@ export default function SpecializedTraining() {
                     <li><strong>Flexible Formats: </strong> Whether you prefer traditional printed manuals, digital e-books, or, we offer flexible formats to suit your training delivery preferences</li>
                     <li><strong>Proven Expertise: </strong> With professional expertise and research based methodologies we deliver high-quality training materials that drive results. Our manuals are backed by</li>
                 </ul>
-                <p>From engaging design to comprehensive content, our manuals are designed to make learning easy, enjoyable, and effective. Say goodbye to one-size-fits-all training materials and hello to personalized learning experiences that drive results.</p>
-                <div className="d-flex justify-content-center">
-                    <p className="text-center p-2">Contact us to learn more about our specialized <br /> training manual development services </p>
-                </div>
-                <div className="d-flex justify-content-center services-contact">
-                    <div className="s-mail">
-                        <h4>Email Us:</h4> <p>sales@bcdserve.com</p>
-                    </div>
-                    <div className="s-call">
-                        <h4>Call Us:</h4> <p>0300-0880323</p>
-                    </div>
-                </div>
+                <p>From engaging design to comprehensive content, our manuals are designed to make learning easy, enjoyable, and effective. Say goodbye to one-size-fits-all training materials and hello to personalized learning experiences that drive results. Contact us to learn more about our specialized <br /> training manual development services:</p>
             </div>
+            <CallActions/>
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import CallActions from "./CallToActions";
 
 export default function TrainingSolutions() {
     return (
@@ -35,15 +36,8 @@ export default function TrainingSolutions() {
                     <li><strong>Evaluation and Follow-Up: </strong> We believe in measuring the impact of training initiatives to gauge the effectiveness of our programs and identify areas for further improvements</li>
                 </ul>
                 <p>Invest in the growth and development of your employees with BCD Services Training Solutions. Contact us to learn more about how we can help you for your team success!</p>
-                <div className="d-flex justify-content-center services-contact">
-                    <div className="s-mail">
-                        <h4>Email Us:</h4> <p>sales@bcdserve.com</p>
-                    </div>
-                    <div className="s-call">
-                        <h4>Call Us:</h4> <p>0300-0880323</p>
-                    </div>
-                </div>
             </div>
+            <CallActions/>
         </div>
     )
 }

@@ -1,9 +1,9 @@
 import React from "react";
-import Calltoaction from "./Calltoaction";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import "animate.css";
+import CallActions from "../Products/CallToActions";
 
 export default function Bussiness() {
   useEffect(() => {
@@ -149,8 +149,7 @@ export default function Bussiness() {
         </div>
       </div>
       {/* About End */}
-      <Calltoaction />
-      <div className="container">
+      <div className="container mb-4">
         <div className="row">
           <div className="col-md-3 py-3 d-flex align-items-stretch" style={{ backgroundColor: "white", borderRadius: "1rem" }} data-aos="fade-up" data-aos-duration="2000">
             <div className="card card-bussiness">
@@ -199,6 +198,7 @@ export default function Bussiness() {
           
         </div>
       </div>
+      <CallActions/>
     </div>
   );
 }
