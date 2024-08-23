@@ -31,10 +31,6 @@ export default function Home() {
       <div className="fables-header">
         <div className="fables-after-overlay">
             <Homebar/>
-          {/* <div className="logo-container">
-            <img style={{ width: "110px", height: "110px" }} src={BcdLogo} alt="" />
-            <h5 className="text-white">BCD Services</h5>
-          </div> */}
           <video autoPlay loop muted playsInline className="header-video">
             <source src="assets\custom\Home-header-video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
